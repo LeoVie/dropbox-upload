@@ -12,12 +12,12 @@ That's it. No download, no sync. Just uploading single files.
 
 ### Upload
 ```bash
-docker run leovie/dropbox-upload -l [FILEPATH_IN_DOCKER_CONTAINER] -r [FILEPATH_IN_DROPBOX]
+docker run -v $(pwd)/environment/:/environment/-v [UPLOAD_DIRECTORY] leovie/dropbox-upload -l [FILEPATH_IN_DOCKER_CONTAINER] -r [FILEPATH_IN_DROPBOX]
 ```
 
 Example:
 ```bash
-docker run -v upload/:/upload/ leovie/dropbox-upload -l /upload/backup.tar -r backup.tar
+docker run -v $(pwd)/environment/:/environment/-v $(pwd)/upload/:/upload/ leovie/dropbox-upload -l /upload/backup.tar -r backup.tar
 ```
 
 ## Thanks
