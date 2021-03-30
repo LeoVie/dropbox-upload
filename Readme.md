@@ -17,7 +17,7 @@ docker run -v $(pwd)/environment/:/environment/-v [UPLOAD_DIRECTORY] leovie/drop
 
 Example:
 ```bash
-docker run -v $(pwd)/environment/:/environment/-v $(pwd)/upload/:/upload/ leovie/dropbox-upload -l /upload/backup.tar -r backup.tar
+docker run -v $(pwd)/environment/:/environment/ -v $(pwd)/upload/:/upload/ leovie/dropbox-upload -l /upload/backup.tar -r backup.tar
 ```
 
 ## Thanks
