@@ -1,0 +1,15 @@
+{
+    "name": "leovie/dropbox-upload",
+    "description": "Upload files to dropbox",
+    "type": "project",
+    "require": {
+        "spatie/dropbox-api": "^1.17",
+        "symfony/dotenv": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Leo Viezens",
+            "email": "leo.viezens@web.de"
+        }
+    ]
+}
