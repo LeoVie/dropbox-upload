@@ -1,5 +1,6 @@
 FROM php:8.0.3-cli
 
+ENV PHP_MEMORY_LIMIT=-1
 COPY infrastructure/php/install_composer.sh /install_composer.sh
 RUN chmod +x /install_composer.sh && /install_composer.sh
 COPY app/ app/
